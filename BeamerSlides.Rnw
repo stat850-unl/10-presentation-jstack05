@@ -42,7 +42,7 @@ ggplot(data = banknote) + geom_histogram(aes(y = Bottom, fill = Status), bins = 
 
 \begin{frame}{CV}
 
-\url{JaydenCV.pdf}
+\url{https://github.com/stat850-unl/10-presentation-jstack05/raw/master/JaydenCV.pdf}
 
 \end{frame}
 

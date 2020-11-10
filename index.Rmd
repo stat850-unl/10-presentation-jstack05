@@ -9,6 +9,6 @@ Here is my CV as well as the self introductory slides I created!
 
 [CV](JaydenCV.pdf)
 
-[ioSlides](ioSlides.Rmd)
+[ioSlides](ioSlides.html)
 
-[beamerSlides](BeamerSlides.Rnw)
+[beamerSlides](BeamerSlides.pdf)
