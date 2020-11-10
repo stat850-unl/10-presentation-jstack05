@@ -1,0 +1,49 @@
+\documentclass[12pt]{beamer}
+\title{Stat 850}
+\subtitle{Assignment 10}
+\author{Jayden Stack}
+\usepackage{graphicx}
+\usepackage{url}
+\graphicspath{{Images/}}
+\begin{document}
+{
+\setbeamertemplate{footline}{} % no slide number here
+\frame{\titlepage}
+}
+
+\section{Biography}
+\begin{frame}
+\begin{itemize}
+\item Name: Jayden Stack
+\item Birthday: February 11, 1998
+\item Program: I am a first year master's student in Statistics
+\item Birthplace: I was born in Yankton, South Dakota
+\item Graduation: May 2022
+\end{itemize}
+\end{frame}
+
+\section{Animal}
+\begin{frame}[fragile]{My Favorite Animal}
+\includegraphics[scale=0.1]{giraffe-picture.jpeg}
+\end{frame}
+
+\section{Plot}
+\begin{frame}[fragile]{My Favorite Plot}
+<<echo=FALSE, results='hide', include=FALSE>>=
+library(mclust)
+library(ggplot2)
+@
+
+<<plot,fig.width=6,fig.height=6,out.width='.65\\linewidth', echo=FALSE, results='hide', warning=FALSE>>=
+ggplot(data = banknote) + geom_histogram(aes(y = Bottom, fill = Status), bins = 20) + coord_flip()
+@
+
+\end{frame}
+
+\begin{frame}{CV}
+
+\url{JaydenCV.pdf}
+
+\end{frame}
+
+\end{document}

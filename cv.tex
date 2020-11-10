@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using maltacv.cls
+% (May 2020) written by Riccardo Mancini, based on the
+% AltaCV template by LianTze Lim (liantze@gmail.com).
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{maltacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the font if you want to
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[default]{lato}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{setspace}
+
+\usepackage{mathpazo}
+\usepackage{textcomp}
+\usepackage{multicol}
+
+% Color schemes:
+% raisinblack_flame
+% darkpurple_princetonorange
+% blue_claret
+% eerieblack_eggplant
+% outerspace_forestgreen
+% raisinblack_midnightgreen
+% teal_brown
+% indigo
+% blue
+% violet
+% you can set your custom colors with:
+% \definecolor{AccentBody}{HTML}{002642}
+% \definecolor{Primary}{HTML}{840032}
+% \colorlet{primary}{Primary}
+% \colorlet{accent_body}{AccentBody}
+
+% this is my favourite but change it as you like
+\setcolorscheme{raisinblack_flame}
+\setlength\multicolsep{0pt}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+
+%% sample.bib contains your publications
+%% NOT SUPPORTED YET
+% \addbibresource{sample.bib}
+
+\name{Jayden Stack}
+\firstname{Jayden}
+\familyname{Stack}
+
+\begin{document}
+\tagline{M.Sc. Statistics student}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{jayden.w.stack@gmail.com}
+  % \birthday{25\textsuperscript{th} Dec 0}
+  % \homepage{www.homepage.com/}
+  % \twitter{@twitterhandle}
+  \linkedin{jaydenstack}
+  \github{jstack05}
+  \phone{1-(308)-430-8193}
+  % \mailaddress{lorem ipsum, dolor, sit, AM, 57846}
+  % \location{Nowhere, Italy}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+\bio{I am devoted and passionate graduate statistics student who is seeking a position in analytics. I carry a incredibly hard work ethic and work well in both independent and team-oriented settings.}
+
+\makecvheader
+
+% put Experience before Education if you are no longer a student
+\cvsection{Education}
+\medskip
+\begin{multicols}{2}
+
+  \cvuniversity{M.Sc. Statistics}{University of Nebraska-Lincoln}{2020 -- 2022 (expected)}{}% last param is location
+  \begin{itemize}
+      \item Current GPA: 4.0
+  \end{itemize}
+
+  % this helps if columns are not the same
+  \vfill\null
+  \columnbreak
+
+  \cvuniversity{B.Arts. Mathematics }{Hastings College}{2016 -- 2020}{}
+  \begin{itemize}
+      \item Pre-Actuarial Science Emphasis
+      \item GPA: 3.91
+  \end{itemize}
+\end{multicols}
+
+\medskip
+\cvsection{Professional Experience}
+
+\cvexperience{Information Technology Intern}{Medeis/AMN Healthcare}{May -- Sep 2019}{Omaha, NE}{React.Redux, C, Git, SQL}
+\begin{itemize}
+  \item Identified and corrected coding errors
+  \item Kept upkeep on company website
+\end{itemize}
+
+\divider
+
+\cvsubsection{Other experience and organizations}
+\medskip
+\begin{multicols}{3}
+  \cvlistitem{Hastings College Student Athletic Advisory Committee}{from 2019-2020 -- Vice-President}
+  \medskip
+  \cvlistitem{ASA}{from 2020 -- Member}
+  \cvlistitem{Frontier Bank}{from 2020 -- Teller}
+  \cvlistitem{Volunteer Referee}{September 2018 - January 2020}
+  \cvlistitem{Youth Baseball Umpire}{May 2015 - August 2018}
+\end{multicols}
+
+\medskip
+\cvsection{Computing Skills}
+\begin{center}
+  \begin{multicols}{5} % adjust #cols as needed
+    \cvlistitem{R}{}
+    \cvlistitem{SQL}{}
+    \cvlistitem{SAS}{}
+    \cvlistitem{Microsft Excel}{}
+    \cvlistitem{Latex}{}
+    \cvlistitem{Github}{}
+    \cvlistitem{React.Redux}{}
+    \cvlistitem{React.js}{}
+    \cvlistitem{HTML}{}
+    \cvlistitem{JavaScript}{}
+    \cvlistitem{CSS}{}
+    \cvlistitem{Python}{}
+    % \cvlistitem{Another P. lang}{}
+  \end{multicols}
+\end{center}
+
+\cvsection{Teaching Experience}
+\cvexperience{Graduate Teaching Assistant}{University of Nebraska-Lincoln}{August 2020 --- Present}{Lincoln, NE}{}
+\begin{itemize}
+  \item STAT 218 instructor and mentor
+  \item Create example scenarios for examinations
+  \item Assess and grade student progress
+\end{itemize}
+\medskip
+\cvexperience{Mathematics Tutor}{Hastings College}{January 2018 --- May 2020}{Hastings, NE}{}
+\begin{itemize}
+  \item Tutor for Calculus I, Calculus II, and Introduction to Statistics
+  \item Provided homework and lesson assistance
+  \item Recover student lessons
+\end{itemize}
+\medskip
+\cvexperience{Personal Tutor}{Self-Employed}{January 2018 --- May 2020}{Hastings, NE}{}
+\begin{itemize}
+  \item Tutored Middle/High School students
+  \item Classes included Algebra, Advanced Algebra II, Trigonometry, AP Calculus, ACT Prep
+  \item Ensure student understanding
+\end{itemize}
+\medskip
+\cvsection{Presentations}
+\cvlistitem{Nebraska Association of Teachers of Mathematics}{Math conference--presented on the development of a new baseball statistic}
+
+\end{document}

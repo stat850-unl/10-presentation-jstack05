@@ -1,0 +1,14 @@
+---
+title: "index"
+author: "Jayden Stack"
+date: "11/9/2020"
+output: html_document
+---
+
+Here is my CV as well as the self introductory slides I created!
+
+[CV](JaydenCV.pdf)
+
+[ioSlides](ioSlides.Rmd)
+
+[beamerSlides](BeamerSlides.Rnw)
